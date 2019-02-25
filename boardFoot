@@ -1,0 +1,40 @@
+/****************************************************
+*Daily assignment1-07
+*Created by Gavin Zhou
+*Created on 2019-02-20
+*This program is called boardFoot
+*This program is when user input the L&W, help user find the high of a 144*3 boardfoot
+*****************************************************/
+
+import java.util.Scanner;
+
+class boardFoot {
+	public static void main(String[] args) {
+		// the symbol of height, width and length.
+		double height;
+		double width;
+		double length;
+		// the total value is 144
+		double value = 144;
+
+		Scanner scanner = new Scanner(System.in);
+		
+		// ask user input width and told user what them need to input
+		System.out.println("This is a program for calculate Width and length");
+		
+		System.out.println("what the width of the boardFoot?");
+		width = scanner.nextInt();
+
+		// ask user input length
+		System.out.println("what the length of the boardFoot?");
+		length = scanner.nextInt();
+		scanner.close();
+
+		// the formula
+		height = value/width/length;
+
+		// anwser
+		System.out.println("The answer is: " + height );
+	}
+}
+
